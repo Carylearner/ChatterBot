@@ -328,7 +328,7 @@ class JaccardSimilarity(Comparator):
 
         pos_a = pos_tag(tokenize.word_tokenize(a))
         pos_b = pos_tag(tokenize.word_tokenize(b))
-
+#单词变体还原
         lemma_a = [
             lemmatizer.lemmatize(
                 token, utils.treebank_to_wordnet(pos)
